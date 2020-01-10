@@ -9,8 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var count = 0
+    @ObservedObject var model = Model()
+
     var body: some View {
-        Text("Hello, World!")
+        HStack {
+            Text("ValueEq is \(model.valueEq)")
+            .onTapGesture {
+                self.count = (self.count + 1) % 3
+                self.model.valueEq = self.model.valueEq + (self.count == 0 ? 1 : 0)
+            }
+            .onReceive(self.model.$valueEq) { val in
+                print("ValueEq is \(val)")
+            }
+
+            Text("ValueAlways is \(model.valueAlways)")
+            .onTapGesture {
+                self.count = (self.count + 1) % 3
+                self.model.valueAlways = self.model.valueAlways + (self.count == 0 ? 1 : 0)
+            }
+            .onReceive(self.model.$valueAlways) { val in
+                print("ValueAlways is \(val)")
+            }
+        }
+        .onReceive(self.model.objectWillChange) { _ in
+            print("Object Changed")
+        }
     }
 }
 

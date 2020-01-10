@@ -13,6 +13,7 @@
 		AFF6D54323C81D2B008F0772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF6D54223C81D2B008F0772 /* Assets.xcassets */; };
 		AFF6D54623C81D2B008F0772 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF6D54523C81D2B008F0772 /* Preview Assets.xcassets */; };
 		AFF6D54923C81D2B008F0772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF6D54723C81D2B008F0772 /* LaunchScreen.storyboard */; };
+		AFF6D55123C81D44008F0772 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6D55023C81D44008F0772 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AFF6D54523C81D2B008F0772 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFF6D54823C81D2B008F0772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFF6D54A23C81D2B008F0772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF6D55023C81D44008F0772 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AFF6D53C23C81D29008F0772 /* AppDelegate.swift */,
 				AFF6D53E23C81D29008F0772 /* SceneDelegate.swift */,
 				AFF6D54023C81D29008F0772 /* ContentView.swift */,
+				AFF6D55023C81D44008F0772 /* Model.swift */,
 				AFF6D54223C81D2B008F0772 /* Assets.xcassets */,
 				AFF6D54723C81D2B008F0772 /* LaunchScreen.storyboard */,
 				AFF6D54A23C81D2B008F0772 /* Info.plist */,
@@ -149,6 +152,7 @@
 				AFF6D53D23C81D29008F0772 /* AppDelegate.swift in Sources */,
 				AFF6D53F23C81D29008F0772 /* SceneDelegate.swift in Sources */,
 				AFF6D54123C81D29008F0772 /* ContentView.swift in Sources */,
+				AFF6D55123C81D44008F0772 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
